@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Form booking</title>
+   </head>
+   <body>
+      <form action="" method="get">
+         <fieldset>
+            <legend style="text-align:center">Details</legend>
+            <label for="fname">Enter the name:</label>
+            <input type="text" id="fname" name="fname"  maxlength="25" required><br><br>
+            <label for="mail">Enter the email:</label>
+            <input type="email" id="mail" name="mail" autofocus="autofocus" value="test@example.com" required><br><br>
+            <label for="pwd">Enter the password:</label>
+            <input type="password" id="pwd" name="pwd" minlength="6" required>
+         </fieldset>
+         <br><br>
+         <label for="item">Category:</label>
+         <select id="item" name="item" required>
+            <option value="">Choose one</option>
+            <option value="Student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="Freelancer" selected>Freelancer</option>
+         </select>
+         <br><br>
+         <label for="date1">Event date:</label>
+         <input type="date" id="date1" name="date1" required><br><br>
+         <label>Select ticket:</label>
+         <input type="radio" id="ticket1" name="ticket" value="Ticket" required>
+         <label for="ticket1">1 Ticket</label>
+         <input type="radio" id="ticket2" name="ticket" value="2 Ticket" required checked> 
+         <label for="ticket2">2 Ticket</label>
+         <input type="radio" id="ticket3" name="ticket" value="3 Ticket" required>
+         <label for="ticket3">3 Ticket</label>
+         <br>
+         <br>
+         <label>Payment:</label>
+         <input type="checkbox" id="pay" name="payement" value="pay" required>
+         <label for="pay">Online payment</label><br><br>
+         <label for="note">Notes</label><br>
+         <textarea rows = "5" cols = "25" id="note" name = "description" placeholder="Tell us your suggestions"></textarea>
+         <br><br>
+         <input type = "submit" value = "submit" />
+         <input type="reset" value="Reset"/>
+      </form>
+   </body>
+</html>
